@@ -1,0 +1,24 @@
+{
+  "name": "Superior",
+  "prefix": "adech",
+  "subbranches": {
+    "boulevard": {
+      "1": "#C7DCFF",
+      "2": "#B4D0FF",
+      "3": "#A1C4FF",
+      "4": "#8FB1F0"
+    },
+    "venomous": {
+      "1": "#B0D8BE",
+      "2": "#D9EEDB",
+      "3": "#F6F8FE",
+      "4": "#DBCCE8",
+      "5": "#C7AFD7"
+    },
+    "swamp": {
+      "1": "#1E2646",
+      "2": "#142039",
+      "3": "#091A2B"
+    }
+  }
+}

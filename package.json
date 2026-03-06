@@ -1,0 +1,49 @@
+{
+  "name": "@adech/themes",
+  "version": "0.1.0",
+  "description": "Portable theme tokens for Adech Theme branches",
+  "license": "MIT",
+  "type": "commonjs",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "package.json"
+  ],
+  "scripts": {
+    "build": "npm run build:superior",
+    "build:all": "npm run build:superior && npm run build:legacy && npm run build:human",
+    "build:branch": "node scripts/build-branch.js",
+    "build:superior": "node scripts/build-branch.js superior",
+    "build:legacy": "node scripts/build-branch.js legacy",
+    "build:human": "node scripts/build-branch.js human",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "theme",
+    "themes",
+    "design-tokens",
+    "colors",
+    "tailwind",
+    "tailwindcss",
+    "css-variables"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    "./superior": "./dist/superior/index.js",
+    "./superior/json": "./dist/superior/superior.json",
+    "./superior/css": "./dist/superior/superior.css",
+    "./superior/tailwind": "./dist/superior/superior.tailwind.css",
+    "./superior/preset": "./dist/superior/superior.preset.cjs"
+  },
+  "homepage": "https://github.com/adechlien/adech",
+    "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adechlien/adech.git"
+  },
+  "bugs": {
+    "url": "https://github.com/adechlien/adech/issues"
+  }
+}
